@@ -1,6 +1,5 @@
 package com.topic3.android.reddit.components
 
-import android.hardware.camera2.params.MeteringRectangle
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -36,7 +35,7 @@ fun TextPost(post: PostModel) {
 }
 
 @Composable
-fun ImagePost(post: PostModel) {
+fun ImagePost(post: Int) {
   Post(post) {
     ImageContent(post.image ?: R.drawable.compose_course)
   }
